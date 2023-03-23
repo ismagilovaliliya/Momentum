@@ -1,0 +1,72 @@
+<!DOCTYPE html
+<! --установка языка страницы--> 
+<html lang="en">
+<html >
+  <head>
+    <meta charset="UTF-8" />
+   <!-- обработка размера страницы без прокрутки
+    initial-scale - начальный масштаб
+    device-width - по умолчанию экрана -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/favicon.ico" rel="shortcut icon" >
+    <link href="css/owfont-regular.css" rel="stylesheet" >
+    <link href="css/style.css" rel="stylesheet">
+    <title>Momentum</title>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="player">
+        <div class="player-controls">
+          <button class="play-prev player-icon"></button>
+          <button class="play player-icon"></button>
+          <button class="play-next player-icon"></button>
+        
+        </div>            
+      <!--  <input type="range" id="progress-bar" min="0" max="" value="0" onchange="changeProgressBar()"/>
+        <div class = "playerTime playerTime"> 
+          <div class="currentTime"></div> 
+          <div class="durationTime"></div> 
+        </div>    -->
+        <ul class="play-list"></ul>
+      </div>
+
+      <div class="weather">
+        <div class="city"></div>
+        <i class="weather-icon owf"></i>
+        <div class="description-container">
+          <span class="temperature"></span>
+          <span class="weather-description"></span>
+        </div>
+        <div class="wind"></div>
+        <div class="humidity"></div>
+      </div>
+    </header>
+
+    <main class="main">
+      <time class="time"></time>
+      <date class="date"></date>
+      <div class="greeting-container">
+        <span class="greeting"></span>
+        <input type="text" class="name" />
+      </div>
+    </main>
+
+    <footer class="footer">
+      <button class="change-quote"></button>
+      <div>
+        <div class="quote"></div>
+        <div class="author"></div>
+      </div>
+    </footer>
+
+    <script src="js/background.js"></script>
+    <script src="js/timeDate.js"></script>
+    <script src="js/greetings.js"></script> 
+    <script src="js/weather.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/player.js"></script>
+   <!--<script type="module" src="js/playList.js"></script>-->
+  
+  </body>
+</html>
